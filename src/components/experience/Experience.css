@@ -1,0 +1,89 @@
+:root {
+    --box-shadow: 5px 5px 10px 10px rgba(110, 175, 10, 0.5);
+    --bg-color: rgb(40, 47, 97);
+  }
+.experience{
+  scroll-margin-top: 20px;
+
+    width: 60vw;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+.experience > h1{
+  font-size: 40px;
+  align-self: self-start;
+    
+}
+.experience .experience_box{
+    width: 100%;
+    min-height: 200px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: var(--bg-color);
+ border: 2px solid yellow;
+ border-radius: 10px  ;
+text-align: center;
+padding: 20px 20px;
+gap: 30px;
+box-shadow: var(--box-shadow);
+}
+.experience .experience_box .right{
+    width: 90%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 10px;
+
+}
+
+
+.experience_box .right pre br{
+  display: none;
+}
+@media (max-width:920px) {
+    .experience .experience_box{
+
+
+ 
+     flex-direction: column;
+     background-color: var(--bg-color);
+     border: 2px solid yellow;
+     border-radius: 10px  ;
+    text-align: center;
+    padding: 20px 20px;
+    gap: 30px;
+    box-shadow: var(--box-shadow);
+    }
+    .experience_box .right pre br{
+        display: block;
+    }
+      
+    }
+@media (max-width:400px) {
+    .experience >h1{
+        font-size: 30px;
+    }
+    .experience{
+        width: 90vw;
+        margin: 0 auto;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;}
+       
+    .experience .experience_box{
+   
+    }
+  
+      
+    }
